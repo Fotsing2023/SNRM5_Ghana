@@ -1,18 +1,7 @@
 
 #----------Introduction for Summary Statistic---------------------
-title: "SRNM_Modeling-Course"
-author: "Ernest Fotsing, PostDoc-Unifr-SIB"
-date: "`r Sys.Date()`"
-output:
-  html_document: default
-pdf_document: default
-header-includes:
-  - \usepackage{fancyhdr}
-- \pagestyle{fancy}
-- \fancyhead[L]{Custom Left Header}
-- \fancyhead[C]{Custom Center Header}
-- \fancyhead[R]{Custom Right Header}
 
+#Course developped by Ernest Fotsing, PhD
 
 #-----------------------Start--------------------------------------------------
 
@@ -20,6 +9,7 @@ header-includes:
 rm(list= ls()) #To remove all objects, issue the command
 
 # install packages
+
 install_and_load_packages <- function() {
   # List of required packages
   packages <- c(
@@ -49,6 +39,7 @@ install_and_load_packages <- function() {
   
   message("all packages installed and loaded successfully!")
 }
+
 
 
 
