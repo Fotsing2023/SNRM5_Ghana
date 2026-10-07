@@ -41,5 +41,54 @@ install_and_load_packages <- function() {
 }
 
 
+#------------------Dowload script-------------------------------------------
+# LM01
+
+url <- "https://github.com/Fotsing2023/SNRM5_Ghana/blob/main/Lm_script"
+
+file_path <- file.path("Lm_script", "LM_01.R")
+
+download.file(url, file_path, mode = "wb")
+
+#LM02
+
+url <- "https://github.com/Fotsing2023/SNRM5_Ghana/blob/main/Lm_script"
+
+file_path <- file.path("Lm_script", "LM_02.R")
+
+download.file(url, file_path, mode = "wb")
+
+# LM03
+
+url <- "https://github.com/Fotsing2023/SNRM5_Ghana/blob/main/Lm_script"
+
+file_path <- file.path("Lm_script", "LM_03.R")
+
+download.file(url, file_path, mode = "wb")
+
+#LM04
+
+url <- "https://github.com/Fotsing2023/SNRM5_Ghana/blob/main/Lm_script"
+
+file_path <- file.path("Lm_script", "LM_04.R")
+
+download.file(url, file_path, mode = "wb")
+
+#----------Basic Plot-----
+
+url <- "https://github.com/Fotsing2023/SNRM5_Ghana/blob/main/Lm_script"
+
+file_path <- file.path("Lm_script", "Basic_Plotting.R")
+
+download.file(url, file_path, mode = "wb")
+
+# Basic Plotting Solution---
+
+url <- "https://github.com/Fotsing2023/SNRM5_Ghana/blob/main/Lm_script"
+
+file_path <- file.path("Lm_script", "Basic_Plotting_Solution.R")
+
+download.file(url, file_path, mode = "wb")
+
 
 
