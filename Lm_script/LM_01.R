@@ -1,25 +1,23 @@
 
+#Introduction to linear Modeling
 
 title: "Statistical Analysis in R"
 author: "Ernest Fotsing, PhD, University of Fribourg"
-date: "`r format(Sys.time(), "Last modified: %d %b %Y")`"
 
 #-------SNRM course, developped by Ernest Fotsing, PhD, University of Fribourg
 
 # define the working directory 
-# get WRD
-getwd()
 
-wrd <- "C:/Users/Fotsing Ernest/OneDrive/Bureau/SNRM_Training/R_Precourse_ErnestFotsing/LM/SNRM_Training_Nairoby"
+wrd <- getwd()
 
 # get all files in my wdr
 list.files(wrd)
 
 #------------------First let do basic of plotting---------------------
-#1 ------first dowload the code from the repository online----
 
 # Define the URL of the Excel file
-url <- "https://github.com/Fotsing2023/SNRM_Training_Nairoby/blob/main/Basic_Plotting00.R"
+url <- "https://github.com/Fotsing2023/SNRM5_Ghana/blob/main/Lm_script/Basic_Plotting.R"
+
 
 # Define the file path where you want to save the Excel file
 file_path <- "Basic_Plotting00.R"
@@ -29,13 +27,13 @@ download.file(url, file_path, mode = "wb")
 #-------------Here we're going into modeling and I assume that you already did the previous and are able to deal with installing packages and read data
 
 # see the content of your files
-list.files("./CourseData/")
+list.files("./Modeling_Data/")
 
 # check if diet data exist
-file.exists("./CourseData/diet.csv")
+file.exists("./Modeling_Data/diet.csv")
 
 # read data
-diet <- read.csv("./CourseData/diet.csv")
+diet <- read.csv("./Modeling_Data/diet.csv")
 head(diet)
 
 summary(diet)
@@ -87,7 +85,7 @@ help(lm)
 # -----------------------------
 
 # Import dataset (overwrite previous one)
-diet = read.csv("./CourseData/diet.csv", row.names = 1)
+diet = read.csv("./Modeling_Data/diet.csv", row.names = 1)
 
 # Define new column: weight loss
 diet$weight.loss = diet$initial.weight - diet$final.weight 
